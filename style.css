@@ -311,15 +311,21 @@ a:hover {
 
 .pane-header {
     margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
+
+
 
 .pane-header h3 {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .squad-question {
