@@ -95,53 +95,181 @@
                     <h2 class="section-title">Estrutura de Pesquisa (Squads)</h2>
                     <p class="section-subtitle">Operamos no formato de "squads" temáticas. Cada grupo possui uma questão
                         norteadora principal que guia as investigações, do entendimento fundamental até a engenharia de
-                        infraestrutura de dados.</p>
+                        infraestrutura de dados, gerando conhecimento profundo sobre domínios específicos.</p>
                 </div>
 
-                <div class="research-list">
-                    <div class="research-item">
-                        <div class="research-item-header">
-                            <span class="squad-question">"Why does it work?"</span>
-                            <h3>M&M <br><span class="squad-title">Math & Modeling</span></h3>
-                        </div>
-                        <div class="research-item-body">
-                            <p><strong>Tópicos-chave:</strong> Foundations of intelligence; Mathematical theory;
-                                Statistical modeling; Learning theory; Optimization & regularization; Algorithm design.
-                            </p>
-                        </div>
+                <div class="squads-wrapper">
+                    <!-- Abas de Navegação -->
+                    <div class="squads-tabs">
+                        <button class="squad-tab-btn active" data-target="squad-mm">
+                            <span class="tab-acronym">M&M</span>
+                            <span class="tab-name">Math & Modeling</span>
+                        </button>
+                        <button class="squad-tab-btn" data-target="squad-seq">
+                            <span class="tab-acronym">SEQlearn</span>
+                            <span class="tab-name">Sequence Learning</span>
+                        </button>
+                        <button class="squad-tab-btn" data-target="squad-trust">
+                            <span class="tab-acronym">TRUSTai</span>
+                            <span class="tab-name">Trustworthy AI</span>
+                        </button>
+                        <button class="squad-tab-btn" data-target="squad-core">
+                            <span class="tab-acronym">CORE</span>
+                            <span class="tab-name">Computing & Research</span>
+                        </button>
                     </div>
 
-                    <div class="research-item">
-                        <div class="research-item-header">
-                            <span class="squad-question">"What do we learn from data?"</span>
-                            <h3>SEQlearn <br><span class="squad-title">Sequence Learning</span></h3>
-                        </div>
-                        <div class="research-item-body">
-                            <p><strong>Tópicos-chave:</strong> Multivariate time series with noise and missing data;
-                                Dataset design & curation; Handcrafted feature extraction; Data-centric learning;
-                                Representation learning.</p>
-                        </div>
-                    </div>
+                    <!-- Conteúdo das Abas -->
+                    <div class="squads-content-area">
 
-                    <div class="research-item">
-                        <div class="research-item-header">
-                            <span class="squad-question">"Should we trust it?"</span>
-                            <h3>TRUSTai <br><span class="squad-title">Trustworthy AI</span></h3>
-                        </div>
-                        <div class="research-item-body">
-                            <p><strong>Tópicos-chave:</strong> Fairness; Transparency; Explainability; Robustness &
-                                safety.</p>
-                        </div>
-                    </div>
+                        <!-- Panel M&M -->
+                        <div class="squad-pane active" id="squad-mm">
+                            <div class="pane-header">
+                                <span class="squad-question">"Why does it work?"</span>
+                                <h3>Math & Modeling</h3>
+                            </div>
+                            <div class="pane-body">
+                                <p class="pane-desc">Neste squad, investigamos os fundamentos matemáticos e teóricos
+                                    subjacentes à inteligência artificial. O foco é compreender as garantias teóricas de
+                                    aprendizado, dinâmicas de otimização e o comportamento quantitativo de modelos em
+                                    diversos cenários.</p>
+                                <div class="pane-topics">
+                                    <strong>Tópicos-chave:</strong> Foundations of intelligence; Mathematical theory;
+                                    Statistical modeling; Learning theory; Optimization & regularization; Algorithm
+                                    design.
+                                </div>
 
-                    <div class="research-item">
-                        <div class="research-item-header">
-                            <span class="squad-question">"Can we run it?"</span>
-                            <h3>CORE <br><span class="squad-title">Computing and Research Environment</span></h3>
+                                <div class="pane-repos">
+                                    <h4>Repositórios & Projetos</h4>
+                                    <div class="repo-grid">
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="book-open"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="function-square"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="research-item-body">
-                            <p><strong>Tópicos-chave:</strong> Infrastructure; IoT systems; Tools; Frameworks & design
-                                patterns; Software engineering; Expert systems; Enablement.</p>
+
+                        <!-- Panel SEQlearn -->
+                        <div class="squad-pane" id="squad-seq">
+                            <div class="pane-header">
+                                <span class="squad-question">"What do we learn from data?"</span>
+                                <h3>Sequence Learning</h3>
+                            </div>
+                            <div class="pane-body">
+                                <p class="pane-desc">Dedicado à análise, modelagem e extração de conhecimento de dados
+                                    sequenciais e séries temporais multivariadas. Abordamos problemas do mundo real
+                                    focando em imputação, tratamento de ruídos e representações temporais latentes.</p>
+                                <div class="pane-topics">
+                                    <strong>Tópicos-chave:</strong> Multivariate time series with noise and missing
+                                    data; Dataset design & curation; Handcrafted feature extraction; Data-centric
+                                    learning; Representation learning.
+                                </div>
+                                <div class="pane-repos">
+                                    <h4>Repositórios & Projetos</h4>
+                                    <div class="repo-grid">
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="activity"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="database"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel TRUSTai -->
+                        <div class="squad-pane" id="squad-trust">
+                            <div class="pane-header">
+                                <span class="squad-question">"Should we trust it?"</span>
+                                <h3>Trustworthy AI</h3>
+                            </div>
+                            <div class="pane-body">
+                                <p class="pane-desc">Pesquisa focada nos aspectos éticos, de segurança e de
+                                    interpretabilidade em aplicações reais de Inteligência Artificial. Garantimos que os
+                                    modelos construídos sejam transparentes, rastreados e consistentes nas suas
+                                    predições e explicabilidades.</p>
+                                <div class="pane-topics">
+                                    <strong>Tópicos-chave:</strong> Fairness; Transparency; Explainability; Robustness &
+                                    safety; Bias detection and Mitigation.
+                                </div>
+                                <div class="pane-repos">
+                                    <h4>Repositórios & Projetos</h4>
+                                    <div class="repo-grid">
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="shield-check"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="eye"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel CORE -->
+                        <div class="squad-pane" id="squad-core">
+                            <div class="pane-header">
+                                <span class="squad-question">"Can we run it?"</span>
+                                <h3>Computing & Research Environment</h3>
+                            </div>
+                            <div class="pane-body">
+                                <p class="pane-desc">Encarregado da engenharia de software e arquitetura de
+                                    infraestrutura do laboratório. Transforma modelos teóricos e ideias experimentais em
+                                    pipelines operacionais de ponta, utilizando as melhores práticas e padrões de
+                                    projeto para Big Data e experimentações MLOps.</p>
+                                <div class="pane-topics">
+                                    <strong>Tópicos-chave:</strong> Infrastructure; IoT systems; Tools; Frameworks &
+                                    design patterns; Software engineering; Expert systems; Enablement.
+                                </div>
+                                <div class="pane-repos">
+                                    <h4>Repositórios & Projetos</h4>
+                                    <div class="repo-grid">
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="server"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="repo-card">
+                                            <div class="repo-icon"><i data-lucide="cpu"></i></div>
+                                            <div class="repo-info">
+                                                <h5>[repo-name]</h5>
+                                                <p>[repo-description]</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,6 +383,21 @@
                 mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
             }
             lucide.createIcons();
+        });
+
+        // Tabs dos Squads
+        const squadTabs = document.querySelectorAll('.squad-tab-btn');
+        const squadPanes = document.querySelectorAll('.squad-pane');
+
+        squadTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                squadTabs.forEach(t => t.classList.remove('active'));
+                squadPanes.forEach(p => p.classList.remove('active'));
+
+                tab.classList.add('active');
+                const targetId = tab.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
         });
     </script>
 </body>
