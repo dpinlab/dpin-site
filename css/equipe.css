@@ -1,0 +1,119 @@
+.member-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+/* Alterna: Imagem na direita, texto na esquerda */
+.member-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.member-photo-col {
+    flex: 0 0 350px;
+}
+
+.member-photo-col img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+.member-info-col {
+    flex: 1;
+}
+
+.member-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.member-role {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    display: block;
+}
+
+.member-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-primary);
+    border-left: 3px solid var(--text-primary);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.member-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+/* Atributos do Membro (Lista minimalista) */
+.member-attributes {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.member-attributes li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.member-attributes li i {
+    width: 18px;
+    height: 18px;
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+
+.member-attributes li strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.member-attributes li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.member-attributes li a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+
+    .member-row,
+    .member-row.reverse {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .member-photo-col {
+        flex: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                     <li><a href="#apresentacao">Apresentação</a></li>
                     <li><a href="#pesquisa">Pesquisa</a></li>
                     <li><a href="#publicacoes">Publicações</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="/equipe.html">Equipe</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -64,9 +65,7 @@
                                 entre o aprimoramento teórico de algoritmos e suas aplicações em cenários complexos.
                                 Nosso trabalho abrange desde a ciência básica até soluções orientadas a dados e
                                 modelagem preditiva avançada.</p>
-                            <p>Nossa missão é propiciar um ambiente propício à investigação científica, fomentando a
-                                autonomia acadêmica, o raciocínio analítico e a produção de literatura em veículos e
-                                conferências de alto impacto.</p>
+                            <p>lo</p>
                         </div>
                         <a href="#contato" class="link-arrow">Ver oportunidades de ingresso &rarr;</a>
                     </div>
@@ -389,39 +388,7 @@
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
-
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mainNav = document.querySelector('.main-nav');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            const isActive = mainNav.classList.contains('active');
-            if (isActive) {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i data-lucide="menu"></i>';
-            } else {
-                mainNav.classList.add('active');
-                mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
-            }
-            lucide.createIcons();
-        });
-
-        // Tabs dos Squads
-        const squadTabs = document.querySelectorAll('.squad-tab-btn');
-        const squadPanes = document.querySelectorAll('.squad-pane');
-
-        squadTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                squadTabs.forEach(t => t.classList.remove('active'));
-                squadPanes.forEach(p => p.classList.remove('active'));
-
-                tab.classList.add('active');
-                const targetId = tab.getAttribute('data-target');
-                document.getElementById(targetId).classList.add('active');
-            });
-        });
-    </script>
+    <script src="./global.js"></script>
 </body>
 
 </html>
