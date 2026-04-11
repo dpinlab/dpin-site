@@ -428,39 +428,6 @@
         display: none;
     }
 
-    .nav-links {
-        display: none;
-    }
-
-    .main-nav {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: var(--bg-main);
-        border-bottom: 1px solid var(--border-color);
-        padding: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .main-nav.active {
-        max-height: 400px;
-        padding: 1rem 0;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
     .publication-item {
         flex-direction: column;
         gap: 0.5rem;
